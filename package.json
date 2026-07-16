@@ -1,0 +1,14 @@
+{
+  "name": "shop502-cart-tui",
+  "version": "0.1.0",
+  "description": "POC TUI para manejo de carrito de usuarios anonimos - Shop 502",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node src/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
