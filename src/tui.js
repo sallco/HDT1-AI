@@ -56,9 +56,9 @@ function processInput(cart, input) {
     };
   }
 
-  const result = cart.updateQuantity(command.productId, command.quantity);
+  const productExists = cart.getItems().some(({ productId }) => productId === command.productId);
 
-  if (!result.productExisted && command.quantity < 0) {
+  if (!productExists && command.quantity < 0) {
     return {
       done: false,
       lines: [
@@ -66,6 +66,8 @@ function processInput(cart, input) {
       ],
     };
   }
+
+  cart.updateQuantity(command.productId, command.quantity);
 
   if (cart.isEmpty()) {
     return {
