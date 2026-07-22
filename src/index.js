@@ -1,13 +1,12 @@
-const Cart = require('./cart');
+#!/usr/bin/env node
 
-function main() {
-  const cart = new Cart();
-  console.log('Shop 502 - Carrito TUI (POC)');
-  return cart;
-}
+const { runTui } = require('./tui');
 
 if (require.main === module) {
-  main();
+  runTui().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
 }
 
-module.exports = main;
+module.exports = runTui;
