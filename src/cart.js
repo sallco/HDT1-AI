@@ -13,7 +13,7 @@ class Cart {
 
     if (delta < 0) {
       if (!this.items.has(productId)) {
-        return { productExisted: false };
+        throw new Error(`Cannot decrease quantity of non-existent product: ${productId}`);
       }
 
       const current = this.items.get(productId);
