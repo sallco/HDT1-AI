@@ -1,8 +1,5 @@
 # Shop 502 - Carrito TUI (Prueba de Concepto)
 
-[![CI Pipeline](https://github.com/sallco/HDT1-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/sallco/HDT1-AI/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 Prueba de concepto (POC) de una interfaz de consola (**TUI - Text User Interface**) para el manejo del carrito de compras de usuarios anónimos de la tienda **Shop 502**.
 
 ## Grupo 7
